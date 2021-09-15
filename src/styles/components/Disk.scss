@@ -1,0 +1,19 @@
+@keyframes rotateCenter {
+    0% {
+              transform: rotate(0);
+    }
+    100% {
+              transform: rotate(360deg);
+    }
+  }
+
+section{
+    width: 100%;
+    height: 80vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    img{
+        animation: rotateCenter 1s linear infinite ;
+    }
+}

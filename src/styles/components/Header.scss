@@ -1,0 +1,17 @@
+header{
+    background: #103069;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+    div{
+        width: 80%;
+        margin: 0 auto;
+        h2{
+            color: white;
+            margin: 0px;
+            text-transform: uppercase;
+        }
+    }
+}

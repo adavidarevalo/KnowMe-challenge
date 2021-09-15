@@ -1,42 +1,28 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from "react" 
+import {Helmet} from "react-helmet"
+import '../styles/components/Header.scss'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+
+
+const Header = () => {
+return(
+  <>
+  <Helmet htmlAttributes>
+    <html lang="en" />
+    <title>Know Me</title>
+    <meta name="description" content="Basic example" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300;1,400&display=swap" rel="stylesheet" />
+  </Helmet>
+  <header>
+    <div>
+      <h2>Know Me</h2>
+      </div>
   </header>
+  </>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
