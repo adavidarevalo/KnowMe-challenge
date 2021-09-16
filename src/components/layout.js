@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 
 const Container = styled.main`
 background: #c6d9fb;
-min-height: 88vh;
+min-height: 90vh;
 `
 
 const Layout = ({ children }) => {

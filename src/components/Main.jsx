@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import '../styles/components/Main.scss'
 import Background from './Background'
+import music from '../images/music.png'
 
 
 const Main = () =>{
@@ -50,6 +51,8 @@ const Main = () =>{
     
     return(
         <>
+        <div className='Container'>
+          <img src={music} alt='Icon'/>
           <form>
           <div>
           <label>Biography
@@ -103,6 +106,7 @@ const Main = () =>{
           )}
           </section>
           <Background/>
+          </div>
         </>
     )
 }
